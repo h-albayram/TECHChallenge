@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.HomeActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvMyOrder"
+        android:text="MARKETİM"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="@color/red"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.2">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtUserName"
+            android:hint="Kullanıcı Adı"
+            android:layout_marginLeft="64dp"
+            android:layout_centerHorizontal="true"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtPasword"
+            android:hint="şifre"
+            android:inputType="textPassword"
+            android:layout_marginLeft="64dp"
+            android:layout_below="@+id/edtUserName"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/btnLogin"
+    android:layout_centerHorizontal="true"
+    android:text="Giriş"
+    android:background="@color/red"
+    android:textColor="@color/white"
+    android:layout_marginLeft="64dp"
+    android:layout_marginTop="16dp"/>
+    </RelativeLayout>
+</LinearLayout>

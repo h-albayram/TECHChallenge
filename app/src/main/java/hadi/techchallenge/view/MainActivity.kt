@@ -1,7 +1,8 @@
-package hadi.techchallenge
+package hadi.techchallenge.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import hadi.techchallenge.R
 
 class MainActivity : AppCompatActivity() {
 

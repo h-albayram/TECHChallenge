@@ -13,12 +13,11 @@ class SharedPreferenceHelper(var context: Context) {
         mEditor = mSharedPref!!.edit()
     }
 
-    fun setString(key: String, value: String) {
-        if (mSharedPref != null) {
+    fun setBoolean(key: String, value: Boolean) {
             if(mSharedPref!=null){
-                mEditor!!.putString(key, value)
+                mEditor!!.putBoolean(key, value)
                 mEditor!!.apply()
             }
-        }
     }
+    fun getBoolean(key:String):Boolean= mSharedPref!!.getBoolean(key,false)
 }
